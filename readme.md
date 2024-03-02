@@ -1,8 +1,8 @@
-This webpage is intended to display my coursework and contact information so that potential employers can find it. 
+This webpage is intended to display my coursework and contact information so that potential employers can view it. 
 
 Github Repository Link: https://github.com/sd8295642/module-2-challenge
 
-Deployed Site Link: 
+Deployed Site Link: https://sd8295642.github.io/module-2-challenge/
 
 [Preview image of porfolio website](assets/readmedemoimg.JPG)
 
