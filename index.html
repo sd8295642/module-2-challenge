@@ -3,14 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Shannon Dardis</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
+    <!--Header, profile image and navigation bar-->
     <header>
         <h1>Shannon Dardis</h1>
+        <img src="assets/cssdaisyimg.JPG" alt="Screencapture of a white daisy on a light blue background created using CSS">
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -22,30 +24,42 @@
     </header>
 
     <main>
+        <!--Polka dot accent banner with subtitle, quote attributed to various historical sources/figures-->
+        <section class="polka-dots">
+            <h3>Comparison is a thief of joy</h3>
+        </section>
+
+        <!--About me section, to be expanded later-->
         <section id="about">
             <h2>About Me</h2>
-            <p>This is actual about me content</p>
+            <p>I enjoy puzzles, board games and long naps!</p>
         </section>
+       
+        <!--Links to projects-->
         <section id="work">
             <h2>Work</h2>
-            <p>This is actual work content</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Info</h2>
-            <ul>
-                <li><a href="mailto:someone@example.com">Email Me</a></li>
-                <li><a href="tel:+555-555-5555">Phone Me</a></li>
-                <li><a href="">Github</a></li>
-            </ul>
-        </section>
+            <div class="project-grid">
+                <a class="grid-item1 grid-link1" href="https://sd8295642.github.io/module-1-challenge/"> Module 1 Challenge</a>
+                <a class="grid-items" href="#"> Module 3 Challenge</a>
+                <a class="grid-items" href="#"> Module 4 Challenge</a>
+                <a class="grid-items" href="#"> Module 5 Challenge</a>
+            </div>
+        <!-- To be added later
         <section id="resume">
             <a href="#">Resume</a>
         </section>
+        -->
     </main>
+    <aside id="contact">
+        <h2>Contact Info</h2>
+            <ul>
+                <li><a href="mailto:sd8295642@gmail.com">Email</a></li>
+                <li><a href="tel:+555-555-5555">Phone</a></li>
+                <li><a href="https://github.com/sd8295642">Github</a></li>
+            </ul>
+        </aside>
+    
+    <footer></footer>
 </body>
-
-
-
-
 
 </html>

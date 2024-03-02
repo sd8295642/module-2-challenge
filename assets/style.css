@@ -1,0 +1,153 @@
+/*Universal selector setting font, color of text and layout of page*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: garamond;
+    color: midnightblue;
+  }
+  
+  /*Header, profile image, and navigation styling*/
+  header {
+    padding: 20px;
+    background-color: mistyrose;
+  }
+  
+  header h1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 48px;
+  }
+
+  header img {
+    display: inline-block;
+    border: 3px dotted white;
+    border-radius: 10px;
+    margin-left: 15px;
+  }
+  
+  header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    background-color: mistyrose;
+  }
+  
+  /*Set list items to display as inline blocks*/
+  header nav ul li,
+  section > * {
+    display: inline-block;
+    margin-left: 25px;
+  }
+  
+  /*Use CSS to create a polka dot pattern, use flex properties to position subtitle*/
+  .polka-dots {
+    width: 100%;
+    height: 150px;
+    font-style: italic;
+    background-color: thistle;
+    background-image: radial-gradient(white 15%, transparent 0%),
+      radial-gradient(white 15%, transparent 0%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+  
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-right: 15px;
+    padding-bottom: 5px;
+  }
+
+  /*Align about me content*/
+  section p {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  /*Create grid to display links to projects*/
+  .project-grid {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+
+  /*Add styling to project links in the grid*/
+  .grid-items {
+    background-color: lavender;
+    width: 200px;
+    border: 10px solid steelblue;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .grid-item1 {
+    background-image: url(challenge1linkbg.JPG);
+    background-color: lavender;
+    width: 350px;
+    height: 150px;
+    border: 10px solid steelblue;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .grid-link1 {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-style: italic;
+  }
+
+  /*Change border color of project links upon hover*/
+  .grid-items:hover {
+    border-color: lightskyblue;
+  }
+  .grid-item1:hover {
+    border-color: lightskyblue;
+  }
+
+  div {
+    padding-bottom: 50px;
+  }
+
+  /*Add styling to contact section*/
+  aside {
+    padding: 20px;
+    background-color: mistyrose;
+  }
+  aside li {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 200px;
+    font-size: larger;
+  }
+
+  li:hover {
+    font-weight: bolder;
+    font-size: x-large;
+    border: 3px solid midnightblue;
+    padding: 5px;
+  }
+
+  /*Change alignment of project links as well as nav background color for mobile view*/
+  @media screen and (max-width: 390px) {
+     .project-grid {
+        flex-direction: column;
+        margin: 10px;
+     }
+     .project-grid a {
+        margin: 10px;
+     }
+     header nav {
+        background-color: mistyrose;
+     }
+  }
